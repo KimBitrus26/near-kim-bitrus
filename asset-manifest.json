@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/KimBitrus26/near-kim-bitrus.git/static/css/main.d87cbb72.chunk.css",
+    "main.js": "/KimBitrus26/near-kim-bitrus.git/static/js/main.ed52b097.chunk.js",
+    "main.js.map": "/KimBitrus26/near-kim-bitrus.git/static/js/main.ed52b097.chunk.js.map",
+    "runtime-main.js": "/KimBitrus26/near-kim-bitrus.git/static/js/runtime-main.1849c19f.js",
+    "runtime-main.js.map": "/KimBitrus26/near-kim-bitrus.git/static/js/runtime-main.1849c19f.js.map",
+    "static/css/2.218dc984.chunk.css": "/KimBitrus26/near-kim-bitrus.git/static/css/2.218dc984.chunk.css",
+    "static/js/2.8f4aa35f.chunk.js": "/KimBitrus26/near-kim-bitrus.git/static/js/2.8f4aa35f.chunk.js",
+    "static/js/2.8f4aa35f.chunk.js.map": "/KimBitrus26/near-kim-bitrus.git/static/js/2.8f4aa35f.chunk.js.map",
+    "static/js/3.8329100e.chunk.js": "/KimBitrus26/near-kim-bitrus.git/static/js/3.8329100e.chunk.js",
+    "static/js/3.8329100e.chunk.js.map": "/KimBitrus26/near-kim-bitrus.git/static/js/3.8329100e.chunk.js.map",
+    "index.html": "/KimBitrus26/near-kim-bitrus.git/index.html",
+    "static/css/2.218dc984.chunk.css.map": "/KimBitrus26/near-kim-bitrus.git/static/css/2.218dc984.chunk.css.map",
+    "static/css/main.d87cbb72.chunk.css.map": "/KimBitrus26/near-kim-bitrus.git/static/css/main.d87cbb72.chunk.css.map",
+    "static/js/2.8f4aa35f.chunk.js.LICENSE.txt": "/KimBitrus26/near-kim-bitrus.git/static/js/2.8f4aa35f.chunk.js.LICENSE.txt",
+    "static/media/bootstrap-icons.css": "/KimBitrus26/near-kim-bitrus.git/static/media/bootstrap-icons.c1d7432e.woff",
+    "static/media/sandwich.2d312449.jpg": "/KimBitrus26/near-kim-bitrus.git/static/media/sandwich.2d312449.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1849c19f.js",
+    "static/css/2.218dc984.chunk.css",
+    "static/js/2.8f4aa35f.chunk.js",
+    "static/css/main.d87cbb72.chunk.css",
+    "static/js/main.ed52b097.chunk.js"
+  ]
+}
