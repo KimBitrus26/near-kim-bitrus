@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "build": "asb --target debug",
+    "build:release": "asb",
+    "asp": "asp --verbose --nologo",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "devDependencies": {
     "near-sdk-as": "^3.2.3"
   },
