@@ -1,5 +1,5 @@
 import { Product, listedProducts } from './model';
-import { ContractPromiseBatch, context } from 'near-sdk-as';
+import { ContractPromiseBatch, context, u128 } from 'near-sdk-as';
 
 
 export function setProduct(product: Product): void {
@@ -7,11 +7,18 @@ export function setProduct(product: Product): void {
     if (storedProduct !== null) {
         throw new Error(`a product with ${product.id} already exists`);
     }
+    if (product.price <= u128.from(0)){
+        throw new Error(`wrong product price`);
+    }
     listedProducts.set(product.id, Product.fromPayload(product));
 }
 
-export function getProduct(id: string): Product | null {
-    return listedProducts.get(id);
+export function getProduct(id: string): Product {
+    let prod = listedProducts.get(id);
+    if (prod == null) {
+        throw new Error("product not found");
+    }
+    return prod;
 }
 
 export function getProducts(): Product[] {
@@ -20,10 +27,7 @@ export function getProducts(): Product[] {
 
 export function buyProduct(productId: string): void {
     const product = getProduct(productId);
-    if (product == null) {
-        throw new Error("product not found");
-    }
-    if (product.price.toString() != context.attachedDeposit.toString()) {
+    if (product.price != context.attachedDeposit) {
         throw new Error("attached deposit should equal to the product's price");
     }
     ContractPromiseBatch.create(product.owner).transfer(context.attachedDeposit);
@@ -33,11 +37,7 @@ export function buyProduct(productId: string): void {
 
 export function removeProduct(product: Product): void {
     const prod = getProduct(product.id);
-    if (prod == null) {
-        throw new Error("product not found");
-    }
     listedProducts.delete(prod.id);
-    
 }
 
 
